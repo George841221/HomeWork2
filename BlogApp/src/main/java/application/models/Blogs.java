@@ -34,11 +34,12 @@ public class Blogs {
     }
 
     public Blogs(int blogId, String blogTitle, LocalDateTime wroteOnDate,
-                 AllUsers author) {
+                 AllUsers author, List<Comments> blogComments) {
         this();
         this.blogId = blogId;
         this.blogTitle = blogTitle;
         this.wroteOnDate = wroteOnDate;
         this.author = author;
+        this.blogComments = blogComments;
     }
 }
