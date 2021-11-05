@@ -1,16 +1,22 @@
 package application.models;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.time.LocalDateTime;
 
+@Getter
+@Setter
 @Entity
 public class Comments {
 
     @Id
+    @GeneratedValue
     private int commentId;
 
     @ManyToOne

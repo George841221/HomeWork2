@@ -3,10 +3,8 @@ package application.models;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +15,7 @@ import java.util.List;
 public class Blogs {
 
     @Id
+    @GeneratedValue
     private int blogId;
     private String blogTitle;
 
@@ -33,13 +32,14 @@ public class Blogs {
         blogComments = new ArrayList<>();
     }
 
-    public Blogs(int blogId, String blogTitle, LocalDateTime wroteOnDate,
-                 AllUsers author, List<Comments> blogComments) {
-        this();
-        this.blogId = blogId;
+    public Blogs(String blogTitle, AllUsers author) {
         this.blogTitle = blogTitle;
-        this.wroteOnDate = wroteOnDate;
         this.author = author;
+    }
+
+    public Blogs(String blogTitle,
+                 AllUsers author, List<Comments> blogComments) {
+        this( blogTitle, author);
         this.blogComments = blogComments;
     }
 }

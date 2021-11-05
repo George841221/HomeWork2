@@ -2,6 +2,11 @@ package application.models;
 
 public enum Gender {
 
-    MALE,
-    FEMALE
+    MALE("male"),
+    FEMALE("female");
+
+    private final String LOVER_CASE;
+    Gender (String loverCase){
+        LOVER_CASE=loverCase;
+    }
 }
