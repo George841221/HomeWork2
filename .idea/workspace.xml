@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="709b4747-52e5-4a64-846f-f60b9655fd9a" name="Changes" comment="" />
+    <list default="true" id="709b4747-52e5-4a64-846f-f60b9655fd9a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogApp/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BlogApp/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogApp/src/main/java/application/blogAppServices/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BlogApp/src/main/java/application/blogAppServices/UserService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,10 +52,25 @@
       <option name="presentableId" value="Default" />
       <updated>1635762407532</updated>
       <workItem from="1635762409483" duration="1438000" />
+      <workItem from="1637000950498" duration="47000" />
+      <workItem from="1637089638890" duration="45000" />
+      <workItem from="1637610398622" duration="7000" />
+      <workItem from="1639773276397" duration="41000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
